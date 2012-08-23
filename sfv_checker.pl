@@ -16,7 +16,7 @@ my @sfvfile = `find . -name *.sfv`;
 foreach (@sfvfile) {
     my $sfv_file = $_;
     chomp $sfv_file;
-    print "File: $sfv_file\n";
+    say "File: $sfv_file";
     my ($path) = $sfv_file =~ m/(.+)\//;
 
     open (FIL, "<", $sfv_file);
